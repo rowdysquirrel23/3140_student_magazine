@@ -1,0 +1,9 @@
+.footer_section{
+    display: flex;
+    background-color: #000000;
+    color: white;
+    padding: 2%;
+    font-size: 16pt;
+    align-items: center;
+    justify-content: space-between;
+}

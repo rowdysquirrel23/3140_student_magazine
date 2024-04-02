@@ -1,0 +1,27 @@
+.nav-bar{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  .nav-bar img{
+    max-width: 80px;
+    max-height: 80px;
+  }
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-bar a {
+    text-decoration: none;
+    color: #262626;
+  }
+  /* The active page nav link will display as green */
+  .nav-bar a:active{
+    color: #FE0303;
+  } 
+  /* A nav link will turn green once hovered over */
+  .nav-bar a:hover{
+    color: #FE0303;
+  }

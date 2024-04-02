@@ -1,0 +1,27 @@
+
+.banner_section {
+    width: 100%;
+    height: auto; /* Set the height of the banner section to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image horizontally and vertically */
+}
+
+.banner_section img {
+    max-width: 100%; /* Ensure the image width never exceeds the width of its container */
+    max-height: auto; /* Ensure the image height never exceeds the height of its container */
+}
+.banner_hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+    .banner_section {
+        font-size: 1.5rem;
+        top: 30%; 
+    }
+}
