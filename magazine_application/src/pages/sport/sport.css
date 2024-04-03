@@ -1,0 +1,59 @@
+
+
+.sport_body{
+    margin-bottom: 2%;
+}
+.sport_header{
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+}
+.sport1{
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 15px;
+}
+.sport_articles{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1fr 0.7fr;
+    margin-left: 3%;
+    margin-right: 3%;
+    grid-gap: 2%;
+}
+.sport1title::first-letter {
+    font-size: 200%;
+}
+
+.sport1text,
+.sport2text{
+    font-size: 16pt;
+}
+@media (max-width: 768px) {
+    .sport_articles {
+        grid-template-columns: 1fr;
+    }
+}
+.read_more1,
+.read_more2 {
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.read_more:hover,
+.read_more2:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+.sport2{
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 15px;
+}

@@ -24,9 +24,10 @@
     transform-origin: top left;
     font-size: 2rem;
     text-align: center;
+    text-shadow: 2px 2px red;
 }
-.story1title::first-letter {
-    font-size: 150%; /* Adjust the font size as needed */
+.story2title::first-letter {
+    font-size: 150%; 
   }
 .story1img{
     max-width: 100%;
@@ -45,7 +46,7 @@
 }
 
 .story2title{
-    text-shadow: 2px 2px red;
+    
     font-size: 2rem;
     text-align: center;
     transform: rotate(5deg);
@@ -60,9 +61,14 @@
     transform: rotate(5deg);
     font-size: 16pt;
 }
+
+
 .story3title{
     font-size: 2rem;
     text-align: center;
+    transform: rotate(-5deg);
+    letter-spacing: 2px;
+    text-shadow: 2px 2px blue;
 }
 .story3img{
     max-width: 100%;

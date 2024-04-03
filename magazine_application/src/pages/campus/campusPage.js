@@ -9,7 +9,7 @@ export default function Campus(){
             <h1 className="campus_header">Campus News!</h1>
             <section className="articles">
                 <div className="story" >
-                    <h2 className="story1title">New Student Union</h2>
+                    <h2 className="story1title">New Student Union!</h2>
                     <img src={story1} className="story1img"></img>
                     <p className="story1text">In the heart of Edge Hill University, a towering structure of steel and glass stands as a testament to the institution's commitment to fostering community and enhancing the student experience. After months of meticulous planning and construction, the new Student Union building is nearing completion, 
                     poised to become a vibrant hub for students from all walks of life.
