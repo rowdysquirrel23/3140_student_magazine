@@ -5,7 +5,7 @@ export default function Footer(){
         <footer className='footer_section'>
             <p className='footer_location'>Ormskirk, L39 4QP</p>
             <p className="footer_copyright">Ben Scholefield©</p>
-            <p className='footer_email'>student_magazine@edgehill.ac.uk</p>
+            <p className='footer_email'>magazine@edgehill.ac.uk</p>
         </footer>
     )
 }

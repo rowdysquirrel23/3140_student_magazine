@@ -7,3 +7,9 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+    .footer_section {
+        font-size: 12pt;
+    }
+}

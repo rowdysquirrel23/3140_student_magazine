@@ -1,4 +1,7 @@
-
+body{
+  font-family: Tahoma;
+  
+}
 .banner_section {
     width: 100%;
     height: auto; /* Set the height of the banner section to 100% of the viewport height */
@@ -17,11 +20,61 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white; 
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 @media (max-width: 768px) {
-    .banner_section {
+    .banner_hero {
         font-size: 1.5rem;
-        top: 30%; 
+        top: 20%; 
+    }
+}
+.general_info{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2%;
+}
+.general_text{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16pt;
+}
+
+.home_content {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the section horizontally */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+}
+
+.library_image,
+.football_image,
+.activity_image {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    padding: 2%;
+    border-radius: 15px;
+}
+.library_image:hover,
+.football_image:hover,
+.activity_image:hover {
+    transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
+}
+.image_text {
+    text-align: center; /* Center-align the text */
+    font-size: 1.5rem; /* Adjust font size */
+    margin-top: 5px; /* Add spacing between the image and text */
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: #262626;
+}
+@media (max-width: 768px) {
+    .home_content {
+        grid-template-columns: 1fr;
     }
 }

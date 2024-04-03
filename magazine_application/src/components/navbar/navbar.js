@@ -7,7 +7,7 @@ export default function Navbar(){
     return (
         
         <nav className="nav-bar">
-            <img src={logo} alt="Logo of a minimalistic style book"></img>
+           <img src={logo}  className="logo" alt="Logo of a minimalistic style book"></img>
             <ul>
             <ActiveLink to="/">Home</ActiveLink>
             <ActiveLink to="/campus">Campus</ActiveLink>
