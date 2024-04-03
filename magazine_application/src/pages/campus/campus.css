@@ -1,0 +1,47 @@
+.campus_header{
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+}
+.articles{
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    font-family: sans-serif;
+    grid-gap: 2%;
+}
+@media (max-width: 768px) {
+    .articles {
+       grid-template-columns: 1fr;
+       margin-left: 3%;
+       margin-right: 3%;
+    }
+}
+.story1title{
+    transform: rotate(-5deg);
+    transform-origin: top left;
+    font-size: 2rem;
+    text-align: center;
+}
+.story1title::first-letter {
+    font-size: 150%; /* Adjust the font size as needed */
+  }
+.story1img{
+    max-width: 100%;
+    max-height: 70%;
+    transform: rotate(-5deg);
+    padding-bottom: 1%;
+}
+.story1img:hover{
+    transform: scale(1.1);
+}
+.story1text{
+    transform: rotate(-7deg);
+    font-size: 16pt;
+}
+
+.story2title{
+    text-shadow: 2px 2px red;
+    font-size: 2rem;
+    text-align: center;
+}
