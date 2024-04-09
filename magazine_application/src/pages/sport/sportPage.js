@@ -1,6 +1,10 @@
 import './sport.css';
 import sport1 from '../../assets/sport_trophy.jpg';
 import sport2 from '../../assets/knight.jpg';
+import sport3 from '../../assets/club.jpg';
+import sport4 from '../../assets/football.jpg';
+import sport5 from '../../assets/american_football.jpg';
+import sport6 from '../../assets/hockey.jpg';
 import {useRef, useEffect, useState} from 'react';
 
 
@@ -34,7 +38,7 @@ export default function Sport(){
                 </div>
                 <img src={sport2} className='sport2' alt="Two cartoon knights fighting"></img>
                 <div>
-                    <h2 className='sport2title'>Varsity is Among Us!</h2>
+                    <h2 className='sport2title'>Varsity is Coming!</h2>
                     <p className='sport2text' style={isOpen2 ? null : button_styles}>
                         The rivalry between Edge Hill University and the University of Central Lancashire (UCLAN) was legendary, 
                         stretching back decades and spanning across various sports. As the annual Varsity event approached, 
@@ -45,6 +49,19 @@ export default function Sport(){
                     </p>
                     <button className="read_more2" onClick={() => setIsOpen2(!isOpen2)}>{isOpen2 ? 'Read Less!' : 'Read More!'}</button>
                 </div>
+            </section>
+            <h1 className='society_header'>Society News</h1>
+            <p className='society_text'>
+            Wednesday social night at Alpine Night Club is an integral part of the social scene, 
+            pulsating with energy and excitement that reverberates throughout the week. As the midweek beacon for nightlife enthusiasts, 
+            this cherished tradition draws crowds eager to unwind, dance, and revel in the electric atmosphere.
+            Dress up in themes, complete challanges and have a good time!
+            </p>
+            <section className='society_news'>
+                <img src={sport3} className="sport3" alt="Club dance floor"></img>
+                <img src={sport4} className="sport4" alt="Football team drinking in a pub"></img>
+                <img src={sport5} className="sport5" alt="American football team drinking in the pub"></img>
+                <img src={sport6} className="sport6" alt="Hockey team drinking in the pub"></img>
             </section>
         </body>
     )
