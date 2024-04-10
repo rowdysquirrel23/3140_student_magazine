@@ -78,3 +78,24 @@ a{
         grid-template-columns: 1fr;
     }
 }
+
+.social_title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.social_media{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.social_links img{
+    max-width: 100px;
+    max-height: 100px;
+    padding: 2%;
+}
+
+.social_description {
+    padding: 3%;
+}

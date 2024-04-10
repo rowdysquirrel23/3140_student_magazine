@@ -1,4 +1,7 @@
 import banner_img from '../../assets/magazine_banner.png';
+import img6 from '../../assets/facebook.png';
+import img5 from '../../assets/instagram.png';
+import img4 from '../../assets/snapchat_icon.png';
 import img3 from '../../assets/activities_img.jpg';
 import img2 from '../../assets/sport_img.jpg';
 import img1 from '../../assets/library.jpg'
@@ -34,6 +37,23 @@ export default function Home() {
                         <img src={img3} className="activity_image" alt="Image of a bowling ball"></img>
                         <p className='image_text'>View local Activities!</p>
                     </a>
+                </section>
+                <h3 className="social_title">Vist Our Social Media's!</h3>
+                <section className="social_media">
+                    <div className="social_links">
+                        <a href="https://www.snapchat.com/">
+                        <img src={img4} className="social_icon" alt="Image of the Snapchat icon"></img>
+                        </a>
+
+                        <a href="https://www.instagram.com/">
+                        <img src={img5} className="social_icon" alt="Image of the Instagram Icon"></img>
+                        </a>
+
+                        <a href="https://www.facebook.com/">
+                        <img src={img6} className="social_icon" alt="Image of the Facebook icon"></img>
+                        </a>
+                    </div>
+                    <p className="social_description">Visit us on Social Media to keep up to date with all things Edge Hill.</p>
                 </section>
             </body>
     )
