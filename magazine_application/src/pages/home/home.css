@@ -74,7 +74,7 @@ a{
     color: #262626;
 }
 @media (max-width: 768px) {
-    .home_content {
+    .home_content, .social_media {
         grid-template-columns: 1fr;
     }
 }
@@ -94,8 +94,11 @@ a{
     max-width: 100px;
     max-height: 100px;
     padding: 2%;
+    justify-content: center;
 }
 
 .social_description {
     padding: 3%;
+    text-align: center;
+    font-size: 16pt;
 }

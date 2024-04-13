@@ -82,7 +82,7 @@ export default function Activities(){
 
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 7</h3>
-                            <p className="pub_name">The crickiters</p>
+                            <p className="pub_name">The Crickiters</p>
                         </div>
                     </article>
 

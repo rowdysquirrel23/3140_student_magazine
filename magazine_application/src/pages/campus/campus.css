@@ -8,6 +8,7 @@
     padding: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
     font-family: sans-serif;
     grid-gap: 5%;
 }
@@ -19,7 +20,8 @@
        margin-bottom: 60%;
     }
 }
-.story1title{
+.story1title, 
+.story4title{
     transform: rotate(-5deg);
     transform-origin: top left;
     font-size: 2rem;
@@ -37,7 +39,10 @@
 }
 .story1img:hover,
 .story2img:hover,
-.story3img:hover{
+.story3img:hover,
+.story4img:hover,
+.story5img:hover,
+.story6img:hover{
     transform: scale(1.1);
 }
 .story1text{
@@ -45,8 +50,8 @@
     font-size: 16pt;
 }
 
-.story2title{
-    
+.story2title,
+.story5title{
     font-size: 2rem;
     text-align: center;
     transform: rotate(5deg);
@@ -63,7 +68,8 @@
 }
 
 
-.story3title{
+.story3title,
+.story6title{
     font-size: 2rem;
     text-align: center;
     transform: rotate(-5deg);
@@ -77,5 +83,25 @@
 }
 .story3text{
     font-size: 16pt;
+    transform: rotate(-5deg);
+}
+.story4img{
+    max-width: 100%;
+    max-height: 70%;
+    transform: rotate(-5deg);
+}
+.story5img{
+    max-width: 100%;
+    max-height: 70%;
+    transform: rotate(5deg);
+}
+.story5text{
+    transform: rotate(5deg);
+    font-size: 16pt;
+}
+
+.story6img{
+    max-width: 100%;
+    max-height: 70%;
     transform: rotate(-5deg);
 }
