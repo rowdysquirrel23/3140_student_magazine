@@ -1,7 +1,9 @@
+/* Import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 .activities_header{
     text-align: center;
     font-size: 4rem;
+    /* Font family styling */
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -10,25 +12,30 @@
       "MORF" 15,
       "SHLN" 50;
 }
+/* Styling for large image */
 .pub_golf_img{
     width: 100%;
     display: block;
 }
+/* Overlay text on top of image */
 .golf_title {
     position: absolute; 
     top: 90%; 
     left: 50%; 
+    /* Position it over the center of the image */
     transform: translate(-50%, -50%); 
     color: red; 
     text-align: center; 
     font-size: 5rem; 
     z-index: 1; 
     font-weight: bold; 
+    /* Add shadow to text */
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
   .activities_instructions{
       font-size: 4rem;
       text-align: center; 
+      /* Font family styling */
       font-family: "Honk", system-ui;
       font-optical-sizing: auto;
       font-weight: 400;
@@ -38,36 +45,39 @@
         "SHLN" 50;
   }
   
-/* Pub Card animation */
+/* Pub Card styling */
   .pub_list img {
     display: block;
     max-width: 100%;
     height: auto;
   }
-
+/* display grid for the section and place the items in the center */
 .pub_list{
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
   padding-block: 5rem;
 }
-
+/* Embedded grid  */
 .pub_card{
   display: grid;
   row-gap: 3.5rem;
+  /* 3 by 3 grid */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 3rem;
 }
+/* Hide the cards */
 .pub_section{
   position: relative;
   overflow: hidden;
 }
+/* set size of the pub images */
 .pub_img{
   width: 350px;
   border-radius: 10px;
 }
-
+/* Styling for the text description of the pub */
 .pub_info{
   width: 300px;
   background-color: #D9D9D9;
@@ -79,13 +89,13 @@
   right: 0;
   margin-inline: auto;
 }
-
+/* styling for description */
 .pub_name{
   display: block;
   font-size: 1rem;
   margin-bottom: 1%;
 }
-
+/* styling for description */
 .pub_number{
   font-size: 1.5rem;
   font-weight: 500;
@@ -98,11 +108,11 @@
   opacity: 1;
   transition: opacity .5s;
 }
-
+/* On hover the animation is triggered */
 .pub_section:hover{
   animation: overflow_hover 2s forwards;
 }
-
+/* card changes in height on hover */
 @keyframes display_text{
   0% {
     transform: translateY(0);
@@ -114,18 +124,20 @@
     transform: translateY(-8rem);
   }
 }
-
+/* the description card overflows the pub image */
 @keyframes overflow_hover{
   to{
     overflow: initial;
   }
 }
+/* media query to change grid layout on smaller devices */
 @media (max-width: 768px) {
   .pub_card {
      grid-template-columns: 1fr;
      margin-left: 3%;
      margin-right: 3%;
   }
+  /* change text size and positioning */
   .golf_title{
     font-size: 1.5rem;
     top: 40%; 
