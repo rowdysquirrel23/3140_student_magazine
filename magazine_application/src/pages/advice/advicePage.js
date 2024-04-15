@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import './advice.css';
+
 
 export default function Advice(){
   
@@ -35,27 +37,59 @@ export default function Advice(){
   }, []);
 
   return (
-    <div className='add_comment'>
-      <h1>Comment Your Opinion!</h1>
-      <form onSubmit={handle_submit} className='comment_form'>
-        <label>
-          Name:
-          <input type="text" name="name" value={form_data.name} onChange={handle_change} />
-        </label>
-        <label>
-          Comment:
-          <input type="text" name="comment" value={form_data.comment} onChange={handle_change} />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      <h2>Comments!:</h2>
-      <ul>
-        {submitted_data.map((data, index) => (
-          <li key={index}>
-            <strong>Name:</strong> {data.name}, <strong>Comment:</strong> {data.comment}
-          </li>
-        ))}
-      </ul>
+    <div className='advice_body'>
+      <h1 className='advice_title'>Student Confessions and Problems!</h1>
+      <section className='student_problems'>
+
+        <div className='student_submissions'>
+          <h3 className='student_details'>First Year, On Campus</h3>
+          <p className='student_story'>
+          I'm frustrated with my flatmate's habit of constantly raiding my food stash without permission. 
+          It's incredibly annoying to find my snacks disappearing when I need them the most, especially after a long day of classes.
+          I've tried talking to them about it, but it seems like they just can't resist the temptation of my tasty treats.
+          </p>
+        </div>
+
+        <div className='student_submissions'>
+          <h3 className='student_details'>First Year, On Campus</h3>
+          <p className='student_story'>
+          I'm frustrated with my flatmate's habit of constantly raiding my food stash without permission. 
+          It's incredibly annoying to find my snacks disappearing when I need them the most, especially after a long day of classes.
+          I've tried talking to them about it, but it seems like they just can't resist the temptation of my tasty treats.
+          </p>
+        </div>
+
+        <div className='student_submissions'>
+          <h3 className='student_details'>First Year, On Campus</h3>
+          <p className='student_story'>
+          I'm frustrated with my flatmate's habit of constantly raiding my food stash without permission. 
+          It's incredibly annoying to find my snacks disappearing when I need them the most, especially after a long day of classes.
+          I've tried talking to them about it, but it seems like they just can't resist the temptation of my tasty treats.
+          </p>
+        </div>
+      </section>
+      <section className='add_comment'>
+        <h2>Comment Your Opinion!</h2>
+        <form onSubmit={handle_submit} className='comment_form'>
+          <label>
+            Name:
+            <input type="text" name="name" value={form_data.name} onChange={handle_change} />
+          </label>
+          <label>
+            Comment:
+            <input type="text" name="comment" value={form_data.comment} onChange={handle_change} />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        <h2>Comments!:</h2>
+        <ul>
+          {submitted_data.map((data, index) => (
+            <li key={index}>
+              <strong>Name:</strong> {data.name}, <strong>Comment:</strong> {data.comment}
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 
