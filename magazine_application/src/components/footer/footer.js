@@ -2,6 +2,7 @@ import './footer.css';
 
 export default function Footer(){
     return (
+        // list of content in the footer
         <footer className='footer_section'>
             <p className='footer_location'>Ormskirk, L39 4QP</p>
             <p className="footer_copyright">Ben Scholefield©</p>

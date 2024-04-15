@@ -1,20 +1,23 @@
+/* Styling for the nav bar that will appear on each page */
 .nav-bar{
     display: flex;
-    flex-direction: column; 
+    /* flex-direction: column;  */
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 3%;
   }
+  /* The nav bar image will never be larger than 80px X 80px */
   .nav-bar img{
     max-width: 80px;
     max-height: 80px;
   }
-  .logo{
-    align-items: left;
-  }
+  /* remove list styling for nav elements and display flex so they are all on the same line */
 .nav-bar ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .nav-bar a {
     text-decoration: none;
@@ -28,4 +31,10 @@
   .nav-bar a:hover{
     color: #FE0303;
   }
-  
+  /* media query allows the logo to appear above the nav links when device size changes */
+  @media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

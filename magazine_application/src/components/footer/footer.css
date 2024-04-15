@@ -1,3 +1,4 @@
+/* Basic styling for the footer */
 .footer_section{
     display: flex;
     background-color: #000000;
@@ -5,13 +6,12 @@
     padding: 2%;
     font-size: 16pt;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Allow the footet components to appear on the left, centre and right */ 
 }
-
+/* Media query to change the display of the footer depending on device size*/
 @media (max-width: 768px) {
     .footer_section {
         font-size: 12pt;
-        /* position: fixed; */
         bottom: 0;
     }
 }
