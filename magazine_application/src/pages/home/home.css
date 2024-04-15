@@ -1,38 +1,44 @@
-body{
+.home_body{
   font-family: Tahoma;
   
 }
+/* Peramaters for the banner section  */
 .banner_section {
     width: 100%;
-    height: auto; /* Set the height of the banner section to 100% of the viewport height */
+    height: auto; 
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the image horizontally and vertically */
+    justify-content: center; /* center the image horizontally and vertically */
 }
-
+/* Make the banner image fit within the container */
 .banner_section img {
-    max-width: 100%; /* Ensure the image width never exceeds the width of its container */
-    max-height: auto; /* Ensure the image height never exceeds the height of its container */
+    max-width: 100%; 
+    max-height: auto; 
 }
+/* overlay the text on the banner image */
 .banner_hero{
     position: absolute;
     top: 50%;
     left: 50%;
+    /* position the text in the desired place */
     transform: translate(-50%, -50%);
     color: white; 
     font-size: 3rem;
 }
+/* Change the positioning of the text when device size changes */
 @media (max-width: 768px) {
     .banner_hero {
         font-size: 1.5rem;
-        top: 20%; 
+        top: 25%; 
     }
 }
+/* Import Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 .general_info{
     font-size: 4rem;
     text-align: center;
     padding: 2%;
+    /* Font styling */
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -41,25 +47,29 @@ body{
       "MORF" 15,
       "SHLN" 50;
 }
+/* Center the general text and change its font size */
 .general_text{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 16pt;
 }
-
+/* Grid styling for the image section */
 .home_content {
     position: relative;
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto; 
     display: grid;
+    /* 3 columns on the page */
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2%;
     opacity: 1;
+    /* Animations for the images to fly in from the side */
     transform: translateX(0%);
     animation: flyIn 6s ease forwards;
 }
+/* peramaters for the animation */
 @keyframes flyIn {
     from {
         transform: translateX(-100%);
@@ -68,25 +78,30 @@ body{
         transform: translateX(0);
       }
   }
+  /* Style all of the images at once */
 .library_image,
 .football_image,
 .activity_image {
     max-width: 100%; 
     height: auto; 
     padding: 2%;
+    /* add curve to the image edges  */
     border-radius: 15px;
 }
+/* When hovered over, the images increase in size by 10% */
 .library_image:hover,
 .football_image:hover,
 .activity_image:hover {
     transform: scale(1.1);
 }
+/* Styling for the text link under the images */
 .image_text {
     text-align: center; 
     font-size: 1.5rem; 
     margin-top: 5px; 
     color: red;
 }
+/* remove link styling */
 a{
     text-decoration: none;
     color: #262626;
@@ -96,13 +111,14 @@ a{
     text-align: center;
     font-size: 2rem;
 }
-
+/* grid for the social media images */
 .social_media{
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+/* Style the social media images at once */
 .social_links img{
     max-width: 100px;
     max-height: 100px;
@@ -115,6 +131,8 @@ a{
     text-align: center;
     font-size: 16pt;
 }
+/* Media query so that a smaller device only has 1 column, 
+this means that content just displays below instead  */
 @media (max-width: 768px) {
     .home_content, .social_media {
         grid-template-columns: 1fr;
