@@ -8,27 +8,30 @@ import story6 from '../../assets/accom_story.jpg';
 
 export default function Campus(){
     return (
-        <body className="campus_body">
+        <div className="campus_body">
             <h1 className="campus_header">Campus News!</h1>
+            {/* The section contains all of the stories on this page */}
+            {/* Row 1 */}
             <section className="articles">
+                {/* Each div contains a title, Image and text story */}
                 <div className="story" >
-                    {/* Row 1 */}
                     <h2 className="story1title">New Student Union!</h2>
                     <img src={story1} className="story1img" alt="A building under construction"></img>
                     <p className="story1text">In the heart of Edge Hill University, a towering structure of steel and glass stands as a testament to the institution's commitment to fostering community and enhancing the student experience. After months of meticulous planning and construction, the new Student Union building is nearing completion, 
                     poised to become a vibrant hub for students from all walks of life.
                     </p>
                 </div>
+                {/* Each div contains a title, Image and text story */}
                 <div className="story">
-                    <h2 className="story2title">Modern University Again?</h2>
-                    
+                    <h2 className="story2title">Modern University Again?</h2>    
                     <p className="story2text">Edge Hill University is on a mission to reclaim its title as the Modern University of the Year, driven by a relentless pursuit of innovation and excellence. 
                         With a commitment to pushing boundaries in teaching, research, and student support, the university is actively shaping the future of higher education. 
                         Embracing cutting-edge technology, fostering interdisciplinary collaboration, and prioritizing the student experience, 
                         Edge Hill is poised to once again stand at the forefront of modern education. 
-                        </p>
-                        <img src={story2} className="story2img" alt="A trophy cabinet"></img>
+                    </p>
+                    <img src={story2} className="story2img" alt="A trophy cabinet"></img>
                 </div>
+                {/* Each div contains a title, Image and text story */}
                 <div className="story">
                     <h2 className="story3title">Geese Taking Over!</h2>
                     <img src={story3} className="story3img" alt="A goose chasing a girl"></img>
@@ -38,6 +41,7 @@ export default function Campus(){
                     </p>
                 </div>
                 {/* Row 2 */}
+                {/* Each div contains a title, Image and text story */}
                 <div className="story" >
                     <h2 className="story4title">Grant National Weekend!</h2>
                     <img src={story4} className="story4img" alt="horse racing"></img>
@@ -47,6 +51,7 @@ export default function Campus(){
                     marking a break from the rigors of academic life and a chance to immerse themselves in the pageantry and adrenaline of the races.
                     </p>
                 </div>
+                {/* Each div contains a title, Image and text story */}
                 <div className="story" >
                     <h2 className="story5title">Graduiation is Closing In!</h2>
                     <p className="story5text">In the heart of Edge Hill University, a towering structure of steel and glass stands as a testament to the institution's commitment to fostering community and enhancing the student experience. After months of meticulous planning and construction, the new Student Union building is nearing completion, 
@@ -54,6 +59,7 @@ export default function Campus(){
                     </p>
                     <img src={story5} className="story5img" alt="a student in graduation gown"></img>
                 </div>
+                {/* Each div contains a title, Image and text story */}
                 <div className="story" >
                     <h2 className="story6title">Accomidation Updates!</h2>
                     <img src={story6} className="story6img" alt="a university accomidation"></img>
@@ -62,6 +68,6 @@ export default function Campus(){
                     </p>
                 </div>
             </section>
-        </body>
+        </div>
     )
 }

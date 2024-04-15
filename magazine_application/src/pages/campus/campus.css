@@ -1,7 +1,9 @@
-
+/*  Import Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 .campus_header{
     text-align: center;
     font-size: 4rem;
+    /* Styling to the font added */
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -11,15 +13,17 @@
       "SHLN" 50;
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
+/* Display the grid for this page */
 .articles{
     padding: 3%;
     display: grid;
+    /* 2 Rows containing 3 columns */
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr;
     font-family: sans-serif;
     grid-gap: 5%;
 }
+/* On smaller devices, only 1 column and content just appears below */
 @media (max-width: 768px) {
     .articles {
        grid-template-columns: 1fr;
@@ -29,23 +33,29 @@
     }
     
 }
+/* Rotate the text so it is on an angle */
 .story1title, 
 .story4title{
     transform: rotate(-5deg);
     transform-origin: top left;
     font-size: 2rem;
     text-align: center;
+    /* Add a red shadow to the text */
     text-shadow: 2px 2px red;
 }
-.story2title::first-letter {
+/* Make the first ketter of the title bigger */
+.story2title::first-letter,
+.story5title::first-letter {
     font-size: 150%; 
   }
+/* Set the iamge sizes and rotate them slightly */
 .story1img{
     max-width: 100%;
     max-height: 70%;
     transform: rotate(-5deg);
     padding-bottom: 1%;
 }
+/* When hovered, the images increase in size by 10% */
 .story1img:hover,
 .story2img:hover,
 .story3img:hover,
@@ -54,61 +64,69 @@
 .story6img:hover{
     transform: scale(1.1);
 }
+/* Rotate text */
 .story1text{
     transform: rotate(-7deg);
     font-size: 16pt;
 }
-
+/* Rotate text */
 .story2title,
 .story5title{
     font-size: 2rem;
     text-align: center;
     transform: rotate(5deg);
 }
-
+/* Set image size and rotate image */
 .story2img{
     max-width: 100%;
     max-height: 70%;
     transform: rotate(5deg);
 }
+/* Rotate text */
 .story2text{
     transform: rotate(5deg);
     font-size: 16pt;
 }
 
-
+/* Rotate titles */
 .story3title,
 .story6title{
     font-size: 2rem;
     text-align: center;
     transform: rotate(-5deg);
     letter-spacing: 2px;
+    /* Add a blue shadow to text */
     text-shadow: 2px 2px blue;
 }
+/* Rotate images and set size */
 .story3img{
     max-width: 100%;
     max-height: 70%;
     transform: rotate(-5deg);
 }
+/* Rotate text  */
 .story3text{
     font-size: 16pt;
     transform: rotate(-5deg);
 }
+/* Rotate images and set size */
 .story4img{
     max-width: 100%;
     max-height: 70%;
     transform: rotate(-5deg);
 }
+/* Rotate images and set size */
 .story5img{
     max-width: 100%;
     max-height: 70%;
     transform: rotate(5deg);
 }
+/* Rotate text */
 .story5text{
     transform: rotate(5deg);
     font-size: 16pt;
 }
-
+/* Rotate images and set size */
 .story6img{
     max-width: 100%;
     max-height: 70%;
