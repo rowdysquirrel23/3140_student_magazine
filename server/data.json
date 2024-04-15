@@ -1,1 +1,4 @@
-{"name":"Ben","email":"test@test.com"}
+{
+  "users": [
+  ]
+}

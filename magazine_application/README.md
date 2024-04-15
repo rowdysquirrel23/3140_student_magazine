@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+This Project is the Student Magazine application chosen for a final year project of a Web Development student.
+The project has been built using the JavaScript framework REACT.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 'Instillations'
+The libraries that have been installed for this project are as follows:
+- npm i react-router-dom
+- npm i express
+- npm i axios
 
-## Available Scripts
 
-In the project directory, you can run:
+
 
 ### `npm start`
 

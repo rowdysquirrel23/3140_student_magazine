@@ -73,11 +73,6 @@ a{
     text-decoration: none;
     color: #262626;
 }
-@media (max-width: 768px) {
-    .home_content, .social_media {
-        grid-template-columns: 1fr;
-    }
-}
 
 .social_title{
     text-align: center;
@@ -101,4 +96,9 @@ a{
     padding: 3%;
     text-align: center;
     font-size: 16pt;
+}
+@media (max-width: 768px) {
+    .home_content, .social_media {
+        grid-template-columns: 1fr;
+    }
 }

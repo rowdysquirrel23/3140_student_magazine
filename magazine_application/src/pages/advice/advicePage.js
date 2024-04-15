@@ -1,64 +1,64 @@
 import React, {useEffect, useState} from 'react';
-
+import axios from 'axios';
 
 export default function Advice(){
-    
-    // const [back_end_entry, set_entry] = useState([{}])
+  
 
-    // useEffect(() => {
-    //     fetch('/api').then(
-    //         response => response.json()
-    //     ).then(
-    //         data => {
-    //             set_entry(data)
-    //         }
-    //     )
-    // }, [])
+  const [form_data, set_form_data] = useState({ name: '', comment: '' });
+  const [submitted_data, set_submitted_data] = useState([]);
 
-    // return(
-    //     <body>
-    //         {(typeof back_end_entry.users === 'undefined') ? (
-    //             <p>loading</p>
-    //         ): (
-    //             back_end_entry.users.map((user, i ) => (
-    //                 <p key={i}>{user}</p>
-    //             ))
-    //         )}
-    //     </body>
-    // )
-
-    const [formData, setFormData] = useState({});
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handle_change = (e) => {
+    const { name, value } = e.target;
+    set_form_data({ ...form_data, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handle_submit = (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch('/api/submit-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+    axios.post('/api', form_data)
+      .then(response => {
+        set_submitted_data([...submitted_data, form_data]);
+        set_form_data({ name: '', comment: '' });
+      })
+      .catch(error => {
+        console.error('Error submitting form:', error);
       });
-      const data = await response.json();
-      // Handle success (e.g., update UI)
-      console.log('Data submitted:', data);
-    } catch (error) {
-      // Handle error
-      console.error('Error submitting data:', error);
-    }
   };
+
+  useEffect(() => {
+    axios.get('/api')
+      .then(response => {
+        set_submitted_data(response.data.users);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="username" placeholder="Enter username" onChange={handleChange} />
-      <input type="text" name="email" placeholder="Enter email" onChange={handleChange} />
-      <button type="submit">Submit</button>
-    </form>
+    <div className='add_comment'>
+      <h1>Comment Your Opinion!</h1>
+      <form onSubmit={handle_submit} className='comment_form'>
+        <label>
+          Name:
+          <input type="text" name="name" value={form_data.name} onChange={handle_change} />
+        </label>
+        <label>
+          Comment:
+          <input type="text" name="comment" value={form_data.comment} onChange={handle_change} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+      <h2>Comments!:</h2>
+      <ul>
+        {submitted_data.map((data, index) => (
+          <li key={index}>
+            <strong>Name:</strong> {data.name}, <strong>Comment:</strong> {data.comment}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
+
 
 
 }
