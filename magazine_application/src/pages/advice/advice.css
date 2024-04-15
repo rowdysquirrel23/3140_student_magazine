@@ -1,11 +1,20 @@
 .advice_body{
     font-family: sans-serif;
+
 }
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 
 .advice_title{
     text-align: center;
-    font-size: 3rem;
-    color: red;
+    font-size: 4rem;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+
 }
 
 .student_problems{
@@ -38,5 +47,66 @@
        margin-left: 3%;
        margin-right: 3%;
     }
-
   }
+
+.add_comment {
+  margin-top: 3%; 
+  text-align: center;
+}
+
+.comment_form {
+  margin-bottom: 20px;  
+}
+
+.comment_form label {
+  display: block; 
+  padding-bottom: 10px; 
+}
+  
+.comment_list {
+  list-style: none; 
+}
+  
+.display_comments {
+  list-style-type: none; 
+}
+  
+.display_comments li {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 10px; 
+  font-size: 16pt;
+}
+
+.display_comments li strong {
+  margin-right: 5px; 
+}
+
+.comments_title {
+  margin-bottom: 20px;
+}
+
+.comments_title, .comments_instructions{
+  font-size: 2rem;
+  color: red;
+}
+
+.display_comments {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.student_problems {
+  transform: translateX(-100%);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

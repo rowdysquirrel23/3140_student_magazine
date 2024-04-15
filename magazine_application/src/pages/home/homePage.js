@@ -6,9 +6,12 @@ import img3 from '../../assets/activities_img.jpg';
 import img2 from '../../assets/sport_img.jpg';
 import img1 from '../../assets/library.jpg'
 import './home.css';
+import {useRef, useEffect, useState} from 'react';
 
 
 export default function Home() {
+
+
     return (
             <body>
                 <section className="banner_section">

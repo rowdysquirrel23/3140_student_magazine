@@ -19,6 +19,7 @@ export default function Sport(){
 
     const [isOpen1, setIsOpen1] = useState(false)
     const [isOpen2, setIsOpen2] = useState(false)
+    
 
     return (
         <body className="sport_body">

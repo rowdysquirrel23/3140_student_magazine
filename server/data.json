@@ -1,12 +1,16 @@
 {
   "users": [
     {
-      "name": "ben",
-      "comment": "comment 1 "
+      "name": "John",
+      "comment": "Jake, I think you should start hiding your food. They cant steal it if they can't find it!"
     },
     {
-      "name": "Test",
-      "comment": "comment 2"
+      "name": "Carl",
+      "comment": "Toby, from personal experience I would stay off campus as you can choose who you live with there! Which is the most important part of your accomodation."
+    },
+    {
+      "name": "Lucy",
+      "comment": "From what you have said, it seems like you are doing all you need to. Friends take time and will come as long as you keep putting yourself out there!"
     }
   ]
 }

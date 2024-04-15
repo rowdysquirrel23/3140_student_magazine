@@ -28,10 +28,18 @@ body{
         top: 20%; 
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 .general_info{
-    font-size: 2rem;
+    font-size: 4rem;
     text-align: center;
     padding: 2%;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
 }
 .general_text{
     text-align: center;
@@ -43,30 +51,40 @@ body{
 .home_content {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; 
+    margin: 0 auto; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2%;
+    opacity: 1;
+    transform: translateX(0%);
+    animation: flyIn 6s ease forwards;
 }
-
+@keyframes flyIn {
+    from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+  }
 .library_image,
 .football_image,
 .activity_image {
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
     padding: 2%;
     border-radius: 15px;
 }
 .library_image:hover,
 .football_image:hover,
 .activity_image:hover {
-    transform: scale(1.1); /* Scale the image to 110% of its original size on hover */
+    transform: scale(1.1);
 }
 .image_text {
-    text-align: center; /* Center-align the text */
-    font-size: 1.5rem; /* Adjust font size */
-    margin-top: 5px; /* Add spacing between the image and text */
+    text-align: center; 
+    font-size: 1.5rem; 
+    margin-top: 5px; 
     color: red;
 }
 a{
@@ -102,3 +120,6 @@ a{
         grid-template-columns: 1fr;
     }
 }
+
+  
+  

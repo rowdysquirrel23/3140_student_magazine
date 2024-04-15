@@ -1,11 +1,18 @@
 .sport_body{
     margin-bottom: 2%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 .sport_header,
 .society_header{
     text-align: center;
-    font-size: 3rem;
-    color: red;
+    font-size: 4rem;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
 }
 .sport1{
     max-width: 100%;

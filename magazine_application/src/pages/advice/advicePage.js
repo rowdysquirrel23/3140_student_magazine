@@ -37,12 +37,14 @@ export default function Advice(){
   }, []);
 
   return (
+
+    
     <div className='advice_body'>
       <h1 className='advice_title'>Student Confessions and Problems!</h1>
       <section className='student_problems'>
 
         <div className='student_submissions'>
-          <h3 className='student_details'>First Year, On Campus</h3>
+          <h3 className='student_details'>Jake, 19</h3>
           <p className='student_story'>
           I'm frustrated with my flatmate's habit of constantly raiding my food stash without permission. 
           It's incredibly annoying to find my snacks disappearing when I need them the most, especially after a long day of classes.
@@ -51,44 +53,42 @@ export default function Advice(){
         </div>
 
         <div className='student_submissions'>
-          <h3 className='student_details'>First Year, On Campus</h3>
+          <h3 className='student_details'>Toby, 20</h3>
           <p className='student_story'>
-          I'm frustrated with my flatmate's habit of constantly raiding my food stash without permission. 
-          It's incredibly annoying to find my snacks disappearing when I need them the most, especially after a long day of classes.
-          I've tried talking to them about it, but it seems like they just can't resist the temptation of my tasty treats.
+          As a second-year student weighing my options for next year, I'm torn between the convenience of living on campus and the independence of staying off-campus. 
+          While the proximity to classes and campus amenities is appealing, the allure of having my own space and more flexibility off-campus is equally enticing.
           </p>
         </div>
 
         <div className='student_submissions'>
-          <h3 className='student_details'>First Year, On Campus</h3>
+          <h3 className='student_details'>Lucy, 18</h3>
           <p className='student_story'>
-          I'm frustrated with my flatmate's habit of constantly raiding my food stash without permission. 
-          It's incredibly annoying to find my snacks disappearing when I need them the most, especially after a long day of classes.
-          I've tried talking to them about it, but it seems like they just can't resist the temptation of my tasty treats.
+          As a university student navigating the social landscape of my first year, I'm eager to make new friends but unsure where to start. 
+          I'm reaching out to upperclassmen, attending campus events, and joining clubs and societies to expand my social circle and find like-minded individuals.
           </p>
         </div>
       </section>
       <section className='add_comment'>
-        <h2>Comment Your Opinion!</h2>
+      <h2 className='comments_title'>Student Opinions!:</h2>
+        <ul className='display_comments'>
+          {submitted_data.map((data, index) => (
+            <li key={index}>
+              <strong>Name:</strong> {data.name}, <strong>Advice:</strong> {data.comment}
+            </li>
+          ))}
+        </ul>
+        <h2 className='comments_instructions'>Comment Your Opinion!</h2>
         <form onSubmit={handle_submit} className='comment_form'>
           <label>
             Name:
             <input type="text" name="name" value={form_data.name} onChange={handle_change} />
           </label>
           <label>
-            Comment:
-            <input type="text" name="comment" value={form_data.comment} onChange={handle_change} />
+            Advice:
+            <input type="text" className="comment_box" name="comment" value={form_data.comment} onChange={handle_change} />
           </label>
           <button type="submit">Submit</button>
         </form>
-        <h2>Comments!:</h2>
-        <ul>
-          {submitted_data.map((data, index) => (
-            <li key={index}>
-              <strong>Name:</strong> {data.name}, <strong>Comment:</strong> {data.comment}
-            </li>
-          ))}
-        </ul>
       </section>
     </div>
   );
