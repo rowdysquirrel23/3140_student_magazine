@@ -1,11 +1,13 @@
 .sport_body{
     margin-bottom: 2%;
 }
+/* Import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
 .sport_header,
 .society_header{
     text-align: center;
     font-size: 4rem;
+    /* Styling for the imported font */
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -14,87 +16,102 @@
       "MORF" 15,
       "SHLN" 50;
 }
+/* Styling for article image */
 .sport1{
     max-width: 100%;
     max-height: auto;
     border-radius: 15px;
 }
+/* display grid for the articles */
 .sport_articles{
     display: grid;
+    /* 4 equal sized columns */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 3%;
     margin-right: 3%;
     grid-gap: 2%;
 }
+/* Make the first letter of the word twice the size */
 .sport1title::first-letter,
 .sport2title::first-letter {
     font-size: 200%;
 }
-
+/* Adjust story text size */
 .sport1text,
 .sport2text{
     font-size: 16pt;
 }
-@media (max-width: 768px) {
-    .sport_articles {
-        grid-template-columns: 1fr;
-        margin-bottom: 30%;
-    }
-}
+
+/* Styling for the text in the sports articles */
 .read_more1,
 .read_more2 {
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: #007bff; /* Blue color */
-    color: #fff; /* White text color */
-    border: 2px solid #007bff; /* Blue border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    font-weight: bold; /* Bold font weight */
-    text-transform: uppercase; /* Uppercase text */
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: 2px solid #007bff;
+    border-radius: 5px; 
+    /* text styling */
+    font-size: 16px;
+    font-weight: bold; 
+    text-transform: uppercase; 
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition */
+    /* When read more is clicked the animation triggers */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
 }
-
+/* Read more hover button */
 .read_more:hover,
 .read_more2:hover {
     background-color: #0056b3; /* Darker blue color on hover */
     border-color: #0056b3; /* Darker blue border on hover */
 }
+/* styling for the image */
 .sport2{
     max-width: 100%;
     max-height: auto;
     border-radius: 15px;
 }
+/* Header styling */
 .society_text{
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 16pt;
 }
+/* display grid for the section */
 .society_news{
     display: grid;
+    /* 4 equal sized columns */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 3%;
     justify-content: center;
+    /* gap in between the grid */
     grid-gap: 3%;
 }
+/* scale the images to the size of the container */
 .society_news img{
     max-width: 100%;
     max-height: 100%;
 }
+/* rotate the images */
 .sport3,
 .sport5{
     transform: rotate(10deg);
 }
+/* rotate the images */
 .sport4,
 .sport6{
     transform: rotate(-10deg);
 }
+/* media query to change it to 1 column on smaller devices */
 @media (max-width: 768px) {
-    .society_news {
-       grid-template-columns: 1fr;
-       margin-left: 3%;
-       margin-right: 3%;
-       margin-bottom: 60%;
+    .sport_articles {
+        grid-template-columns: 1fr;
+        margin-bottom: 30%;
     }
+    .society_news {
+        grid-template-columns: 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 60%;
+     }
 }
