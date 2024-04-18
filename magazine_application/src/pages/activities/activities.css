@@ -66,6 +66,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 3rem;
+  font-family: Tahoma;
 }
 /* Hide the cards */
 .pub_section{

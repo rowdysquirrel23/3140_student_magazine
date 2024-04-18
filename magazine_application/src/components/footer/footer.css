@@ -7,6 +7,7 @@
     font-size: 16pt;
     align-items: center;
     justify-content: space-between; /* Allow the footet components to appear on the left, centre and right */ 
+    font-family: Tahoma;
 }
 /* Media query to change the display of the footer depending on device size*/
 @media (max-width: 768px) {

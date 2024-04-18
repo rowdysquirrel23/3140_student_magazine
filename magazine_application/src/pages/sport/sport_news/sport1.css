@@ -1,0 +1,61 @@
+.news1_title{
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent; /* Hide original text */
+    margin-bottom: -1%;
+    padding: 0;
+    align-self: center;
+}
+
+.football_story{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.5fr;
+    margin: 3%;
+}
+
+.news1_title{
+    grid-column: 1/4;
+    grid-row: 1/ 2;
+    display: flex;
+    margin-top: -1%;
+}
+
+.sport1img{
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.news1_text1,
+.news1_text2{
+    font-size: 14pt;
+    font-family: Tahoma;
+    display: flex;
+    align-self: flex-start;
+    
+}
+.news1_text1{
+    grid-column: 2/3;
+    grid-row: 2/  3;
+    padding-left: 3%;
+}
+.news1_text2{
+    grid-column: 3/3;
+    grid-row: 2/  3;
+    padding-left: 3%;
+}
+
+@media (max-width: 768px) {
+    .news1_title {
+        font-size: 5rem;
+    }
+
+} 
