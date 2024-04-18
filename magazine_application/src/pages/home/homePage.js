@@ -1,12 +1,17 @@
-import banner_img from '../../assets/magazine_banner.png';
+// import banner_img from '../../assets/magazine_banner.png';
+import banner2 from '../../assets/campus_banner.jpg';
 import img6 from '../../assets/facebook.png';
 import img5 from '../../assets/instagram.png';
 import img4 from '../../assets/snapchat_icon.png';
 import img3 from '../../assets/activities_img.jpg';
 import img2 from '../../assets/sport_img.jpg';
 import img1 from '../../assets/library.jpg'
+import sport1 from '../../assets/sport_trophy.jpg';
+import sport2 from '../../assets/knight.jpg';
+import story1 from '../../assets/su_building.jpg';
+import story3 from '../../assets/goose_story.jpg';
 import './home.css';
-import {useRef, useEffect, useState} from 'react';
+import {Link, useEffect, useState} from 'react-router-dom';
 
 
 export default function Home() {
@@ -17,8 +22,31 @@ export default function Home() {
             <div className='home_body'>
                 {/* This section contains the banner image and hero text that is placed on top of it */}
                 <section className="banner_section">
-                    <img className="hero_image" src={banner_img}></img>
-                    <h1 className="banner_hero">EDGE EXPRESS</h1>
+                    <div className='banner_grid1'>
+                            <img className="hero_image" src={banner2}></img>
+                            <h1 className="banner_hero">EDGE EXPRESS</h1>
+                    </div>
+                    <div className='banner_grid2'>
+                        <h2 className='banner_2title'>LATEST NEWS</h2>
+                            <Link to="/sport/sport1" className='recent_story1'>
+                                <img src={sport1} className="recent1" alt="Changing room with a football team celebrating a trophy"></img>
+                                <p className='news_text'>The Edge Clinch The Title!</p>
+                            </Link>
+                        
+                        
+                            <Link to="/sport/sport2" className='recent_story2'>
+                                <img src={sport2} className='recent2' alt="Two cartoon knights fighting"></img>
+                                <p className='news_text'>Varsity is Coming!</p>
+                            </Link>
+                            <Link to="/campus" className='recent_story3'>
+                                <img src={story1} className='recent3' alt="Two cartoon knights fighting"></img>
+                                <p className='news_text'>New Student Union!</p>
+                            </Link>
+                            <Link to="/campus" className='recent_story4'>
+                                <img src={story3} className='recent4' alt="Two cartoon knights fighting"></img>
+                                <p className='news_text'>Geese Taking Over!</p>
+                            </Link>
+                    </div>
                 </section>
                 {/* General title and text about Edge Hill University */}
                 <h2 className="general_info">Edge Hill News</h2>

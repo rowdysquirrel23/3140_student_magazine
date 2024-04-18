@@ -26,8 +26,7 @@ export default function Sport(){
                     {/* Check if the read me button is in use or not */}
                     {/* <p className="sport1text" style={isOpen1 ? null : button_styles}> */}
                     <p className="sport1text">
-                    In a season filled with ups and downs, the Edge Hill University football team embarked on a 
-                    journey that would culminate in an unforgettable triumph. With the league title ...
+                    In a season teeming with anticipation and challenges, the Edge Hill University football team embarked on a journey ...
                    
                     </p>
                     <Link to="/sport/sport1">
