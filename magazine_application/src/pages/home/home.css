@@ -75,9 +75,9 @@
 /* Change the positioning of the text when device size changes */
 @media (max-width: 768px) {
     .banner_hero {
-        font-size: 1.5rem;
-        top: 25%; 
-        
+        font-size: 2rem;
+        top: 35%; 
+        left: -15%;
     }
     .banner_section{
         grid-template-columns: 1fr
@@ -188,6 +188,7 @@ this means that content just displays below instead  */
     .home_content, .social_media {
         grid-template-columns: 1fr;
     }
+
 }
 
   

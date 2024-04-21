@@ -66,6 +66,15 @@
   display: block; 
   padding-bottom: 10px; 
 }
+
+.comment_form input[type="text"] {
+  width: 30%;
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
 /* Small styling */  
 .comment_list {
   list-style: none; 
@@ -98,6 +107,23 @@
 .display_comments {
   list-style-type: none;
   padding: 0;
+}
+
+.advice_button{
+  padding: 10px 20px; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: 2px solid #007bff;
+  border-radius: 5px; 
+  /* text styling */
+  font-size: 16px;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer;
+}
+.advice_button:hover{
+  background-color: #0056b3; /* Darker blue color on hover */
+  border-color: #0056b3; /* Darker blue border on hover */
 }
 /* Animation for the cards */
 .student_problems {

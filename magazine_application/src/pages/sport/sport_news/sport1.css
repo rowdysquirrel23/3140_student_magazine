@@ -58,8 +58,6 @@
         font-size: 5rem;
     }
     .football_story{
-        /* grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr; */
-        /* display: block;  */
+        display: block; 
     }
 } 

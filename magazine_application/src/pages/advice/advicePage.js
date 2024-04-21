@@ -94,7 +94,7 @@ export default function Advice(){
             <input type="text" className="comment_box" name="comment" value={form_data.comment} onChange={handle_change} />
           </label>
           {/* Button submits the user feedback to the json server */}
-          <button type="submit">Submit</button>
+          <button  className="advice_button" type="submit">Submit</button>
         </form>
       </section>
     </div>
