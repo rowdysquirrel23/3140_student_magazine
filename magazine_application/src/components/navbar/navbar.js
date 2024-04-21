@@ -1,6 +1,6 @@
 import {Link, useMatch, useResolvedPath} from 'react-router-dom';
 import './navbar.css';
-import logo from '../../assets/magazine_logo.png';
+import logo from '../../assets/magazine_logo.webp';
 
 export default function Navbar(){
     

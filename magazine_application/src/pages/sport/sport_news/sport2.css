@@ -40,3 +40,13 @@
     font-family: Tahoma;
     padding-bottom: 5%;
 }
+
+@media (max-width: 768px) {
+    .varsity_story {
+        grid-template-columns: 1fr;
+    }
+    .sport2_title1{
+        writing-mode: horizontal-tb; /* Revert to default horizontal writing mode */
+        text-orientation: mixed;
+    }
+} 

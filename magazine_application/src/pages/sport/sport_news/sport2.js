@@ -1,5 +1,5 @@
 import './sport2.css';
-import sport2img from '../../../assets/knight.jpg';
+import sport2img from '../../../assets/knight.webp';
 
 export default function Sport_news2(){
     return(

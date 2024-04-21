@@ -1,15 +1,15 @@
 // import banner_img from '../../assets/magazine_banner.png';
-import banner2 from '../../assets/campus_banner.jpg';
-import img6 from '../../assets/facebook.png';
-import img5 from '../../assets/instagram.png';
-import img4 from '../../assets/snapchat_icon.png';
-import img3 from '../../assets/activities_img.jpg';
-import img2 from '../../assets/sport_img.jpg';
-import img1 from '../../assets/library.jpg'
-import sport1 from '../../assets/sport_trophy.jpg';
-import sport2 from '../../assets/knight.jpg';
-import story1 from '../../assets/su_building.jpg';
-import story3 from '../../assets/goose_story.jpg';
+import banner2 from '../../assets/campus_banner.webp';
+import img6 from '../../assets/facebook.webp';
+import img5 from '../../assets/instagram.webp';
+import img4 from '../../assets/snapchat_icon.webp';
+import img3 from '../../assets/activities_img.webp';
+import img2 from '../../assets/sport_img.webp';
+import img1 from '../../assets/library.webp'
+import sport1 from '../../assets/sport_trophy.webp';
+import sport2 from '../../assets/knight.webp';
+import story1 from '../../assets/su_building.webp';
+import story3 from '../../assets/goose_story.webp';
 import './home.css';
 import {Link, useEffect, useState} from 'react-router-dom';
 

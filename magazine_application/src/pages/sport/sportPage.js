@@ -1,13 +1,12 @@
 // Import all images, libraries and stylesheets needed
 import './sport.css';
-import sport1 from '../../assets/sport_trophy.jpg';
-import sport2 from '../../assets/knight.jpg';
-import sport3 from '../../assets/club.jpg';
-import sport4 from '../../assets/football.jpg';
-import sport5 from '../../assets/american_football.jpg';
-import sport6 from '../../assets/hockey.jpg';
-import {useRef, useEffect, useState} from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
+import sport1 from '../../assets/sport_trophy.webp';
+import sport2 from '../../assets/knight.webp';
+import sport3 from '../../assets/club.webp';
+import sport4 from '../../assets/football.webp';
+import sport5 from '../../assets/american_football.webp';
+import sport6 from '../../assets/hockey.webp';
+import { Link } from 'react-router-dom';
 
 
 

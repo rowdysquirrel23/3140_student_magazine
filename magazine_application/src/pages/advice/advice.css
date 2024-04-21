@@ -102,7 +102,7 @@
 /* Animation for the cards */
 .student_problems {
   transform: translateX(-100%);
-  animation: slideIn 1s ease forwards;
+  animation: slideIn 2s ease forwards;
 }
 /* keyframe to give perameters for the animation */
 @keyframes slideIn {

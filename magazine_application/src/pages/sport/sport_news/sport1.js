@@ -1,12 +1,12 @@
 import './sport1.css';
-import sport1img from '../../../assets/sport_trophy.jpg';
+import sport1img from '../../../assets/sport_trophy.webp';
 
 export default function Sport_news1(){
     return(
         <div>
             <section className="football_story">
                 <h1 className="news1_title">The Edge Clinch The Title!</h1>
-                <img src={sport1img} className="sport1" alt="Changing room with a football team celebrating a trophy"></img>
+                <img src={sport1img} className="sport1img" alt="Changing room with a football team celebrating a trophy"></img>
                 <p className="news1_text1">    
                 In a season teeming with anticipation and challenges, the Edge Hill University football team embarked on a journey destined to etch 
                 itself into the annals of sporting greatness. 

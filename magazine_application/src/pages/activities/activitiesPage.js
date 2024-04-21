@@ -1,15 +1,15 @@
 // Import stylesheet and images
 import './activities.css';
-import activities1 from '../../assets/pubgolf.jpg';
-import pub1 from '../../assets/pub_list/pub1.jpg';
-import pub2 from '../../assets/pub_list/pub2.jpg';
-import pub3 from '../../assets/pub_list/pub3.jpg';
-import pub4 from '../../assets/pub_list/pub4.jpg';
-import pub5 from '../../assets/pub_list/pub5.jpg';
-import pub6 from '../../assets/pub_list/pub6.jpg';
-import pub7 from '../../assets/pub_list/pub7.jpg';
-import pub8 from '../../assets/pub_list/pub8.jpg';
-import pub9 from '../../assets/pub_list/pub9.jpg';
+import activities1 from '../../assets/pubgolf.webp';
+import pub1 from '../../assets/pub_list/pub1.webp';
+import pub2 from '../../assets/pub_list/pub2.webp';
+import pub3 from '../../assets/pub_list/pub3.webp';
+import pub4 from '../../assets/pub_list/pub4.webp';
+import pub5 from '../../assets/pub_list/pub5.webp';
+import pub6 from '../../assets/pub_list/pub6.webp';
+import pub7 from '../../assets/pub_list/pub7.webp';
+import pub8 from '../../assets/pub_list/pub8.webp';
+import pub9 from '../../assets/pub_list/pub9.webp';
 
 
 export default function Activities(){

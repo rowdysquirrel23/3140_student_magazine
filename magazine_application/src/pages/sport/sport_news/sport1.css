@@ -26,7 +26,7 @@
     margin-top: -1%;
 }
 
-.sport1img{
+.sport1img {
     margin-right: 20px;
     width: 100%;
     height: 100%;
@@ -57,5 +57,9 @@
     .news1_title {
         font-size: 5rem;
     }
-
+    .football_story{
+        /* grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr; */
+        /* display: block;  */
+    }
 } 

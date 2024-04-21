@@ -1,10 +1,10 @@
 import './campus.css';
-import story1 from '../../assets/su_building.jpg';
-import story2 from '../../assets/trophy.jpg';
-import story3 from '../../assets/goose_story.jpg';
-import story4 from '../../assets/racing_story.jpg';
-import story5 from '../../assets/graduate_story.jpg';
-import story6 from '../../assets/accom_story.jpg';
+import story1 from '../../assets/su_building.webp';
+import story2 from '../../assets/trophy.webp';
+import story3 from '../../assets/goose_story.webp';
+import story4 from '../../assets/racing_story.webp';
+import story5 from '../../assets/graduate_story.webp';
+import story6 from '../../assets/accom_story.webp';
 
 export default function Campus(){
     return (
