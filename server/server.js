@@ -8,7 +8,6 @@ const DATA_FILE_PATH = './data.json';
 const rateLimit = require('express-rate-limit');
 
 // Apply the rate limiter to all routes
-app.use('/api', limiter);
 
 app.use(express.json());
 
@@ -18,6 +17,8 @@ const limiter = rateLimit({
   max: 6, // Maximum 6 requests per windowMs
   message: 'Too many requests from this IP, please try again later',
 });
+
+app.use('/api', limiter);
 
 app.post('/api', async (req, res) => {
   try {
