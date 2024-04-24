@@ -28,22 +28,24 @@ export default function Home() {
                     </div>
                     <div className='banner_grid2'>
                         <h2 className='banner_2title'>LATEST NEWS</h2>
+                        {/* Link to news story */}
                             <Link to="/sport/sport1" className='recent_story1'>
                                 <img src={sport1} className="recent1" alt="Changing room with a football team celebrating a trophy"></img>
                                 <p className='news_text'>The Edge Clinch The Title!</p>
                             </Link>
-                        
-                        
+                        {/* Link to news story */}
                             <Link to="/sport/sport2" className='recent_story2'>
                                 <img src={sport2} className='recent2' alt="Two cartoon knights fighting"></img>
                                 <p className='news_text'>Varsity is Coming!</p>
                             </Link>
+                        {/* Link to news story */}
                             <Link to="/campus" className='recent_story3'>
-                                <img src={story1} className='recent3' alt="Two cartoon knights fighting"></img>
+                                <img src={story1} className='recent3' alt="A building under construction"></img>
                                 <p className='news_text'>New Student Union!</p>
                             </Link>
+                        {/* Link to news story */}
                             <Link to="/campus" className='recent_story4'>
-                                <img src={story3} className='recent4' alt="Two cartoon knights fighting"></img>
+                                <img src={story3} className='recent4' alt="A goose chasing a woman"></img>
                                 <p className='news_text'>Geese Taking Over!</p>
                             </Link>
                     </div>
@@ -59,19 +61,21 @@ export default function Home() {
                     </p>
                 {/* This section contains image links to the rest of the site, the home page is used as a 'contents' page you would see in a magazine  */}
                 <section className="home_content">
-                    {/* A tag to allow both the text and image to be used as a link */}
-                    <a href='/campus'>
+                    {/* Wrap both the text and image to be used as a link */}
+                    <Link to='/campus'>
                         <img src={img1} className="library_image" alt="a library"></img>
                         <p className='image_text'>View our Campus News!</p>
-                    </a>
-                    <a href='/sport'>
+                    </Link>
+                    {/* Wrap both the text and image to be used as a link */}
+                    <Link to='/sport'>
                         <img src={img2} className="football_image" alt="a football game"></img>
                         <p className='image_text'>View our Sports News!</p>
-                    </a>
-                    <a href='/activities'>
+                    </Link>
+                    {/* Wrap both the text and image to be used as a link */}
+                    <Link to='/activities'>
                         <img src={img3} className="activity_image" alt="a bowling ball"></img>
                         <p className='image_text'>View local Activities!</p>
-                    </a>
+                    </Link>
                 </section>
                 {/* Section to promote the websites social media pages */}
                 <h3 className="social_title">Vist Our Social Media's!</h3>

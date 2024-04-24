@@ -118,7 +118,7 @@
     opacity: 1;
     /* Animations for the images to fly in from the side */
     transform: translateX(0%);
-    animation: flyIn 6s ease forwards;
+    animation: flyIn 4s ease forwards;
 }
 /* peramaters for the animation */
 @keyframes flyIn {
