@@ -23,7 +23,7 @@ export default function Home() {
                 {/* This section contains the banner image and hero text that is placed on top of it */}
                 <section className="banner_section">
                     <div className='banner_grid1'>
-                            <img className="hero_image" src={banner2}></img>
+                            <img className="hero_image" src={banner2} alt='A drone shot of Edge Hill Campus'></img>
                             <h1 className="banner_hero">EDGE EXPRESS</h1>
                     </div>
                     <div className='banner_grid2'>
