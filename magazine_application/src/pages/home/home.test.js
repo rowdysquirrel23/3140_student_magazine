@@ -11,7 +11,7 @@ describe('Home component', () => {
       </Router>
     );
   });
-
+//render banner section of the homepage
   it('renders banner section with hero image and text', () => {
     const hero_image = screen.getByAltText('A drone shot of Edge Hill Campus');
     const banner_text = screen.getByText('EDGE EXPRESS');

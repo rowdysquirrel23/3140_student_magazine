@@ -19,7 +19,7 @@ export default function Activities(){
             {/* Image with text overlay */}
             <section className="activities_banner">
                 <h2 className="golf_title"> Pub Golf</h2>
-                <img src={activities1} className="pub_golf_img"></img>
+                <img src={activities1} className="pub_golf_img" alt='A drone view of pubs'></img>
             </section>
 
             <h2 className="activities_instructions">Pubs and Holes</h2> 
@@ -29,7 +29,7 @@ export default function Activities(){
                 <div className="pub_card">
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub1} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub1} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 1</h3>
                             <p className="pub_name">The Rose & Crown</p>
@@ -37,7 +37,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub2} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub2} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 2</h3>
                             <p className="pub_name">The Horseshoe</p>
@@ -45,7 +45,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub3} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub3} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 3</h3>
                             <p className="pub_name">The Railway</p>
@@ -53,7 +53,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub4} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub4} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 4</h3>
                             <p className="pub_name">The Golden Lion</p>
@@ -61,7 +61,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub5} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub5} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 5</h3>
                             <p className="pub_name">Queens Head</p>
@@ -69,7 +69,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub6} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub6} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 6</h3>
                             <p className="pub_name">Styles Bar</p>
@@ -77,7 +77,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub7} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub7} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 7</h3>
                             <p className="pub_name">The Crickiters</p>
@@ -85,7 +85,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub8} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub8} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 8</h3>
                             <p className="pub_name">Liquid Bar</p>
@@ -93,7 +93,7 @@ export default function Activities(){
                     </article>
                     {/* a pub card, image and text description */}
                     <article className="pub_section">
-                        <img src={pub9} className="pub_img" alt="Image of the front of a pub"></img>
+                        <img src={pub9} className="pub_img" alt="the front of a pub"></img>
                         <div className="pub_info">
                             <h3 className="pub_number">Pub 9</h3>
                             <p className="pub_name">The Court Leet</p>

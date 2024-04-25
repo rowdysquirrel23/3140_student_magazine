@@ -78,7 +78,7 @@ export default function Home() {
                     </Link>
                 </section>
                 {/* Section to promote the websites social media pages */}
-                <h3 className="social_title">Vist Our Social Media's!</h3>
+                <h3 className="social_title">Vist Our Social Medias!</h3>
                 <section className="social_media">
                     <div className="social_links">
                         {/* Users can click the icon to be taken to the socil media */}

@@ -18,9 +18,9 @@ export default function Sport(){
             <h1 className="sport_header">Sport News</h1>
             {/* The sport articles contained within a section */}
             <section className="sport_articles">
-                <img src={sport1} className="sport1" alt="Changing room with a football team celebrating a trophy"></img>
+                <img src={sport1} className="sport_1" alt="Changing room with a football team celebrating a trophy"></img>
                {/* Contains the title and text for the sport story */}
-                <div>
+                <article className='article1'>
                     <h2 className='sport1title'>The Edge Clinche The Title!</h2>
                     {/* Check if the read me button is in use or not */}
                     {/* <p className="sport1text" style={isOpen1 ? null : button_styles}> */}
@@ -31,10 +31,10 @@ export default function Sport(){
                     <Link to="/sport/sport1">
                     <button className="read_more1">Read More...</button>
                     </Link>
-                </div>
-                <img src={sport2} className='sport2' alt="Two cartoon knights fighting"></img>
+                </article>
+                <img src={sport2} className='sport_2' alt="Two cartoon knights fighting"></img>
                 {/* Contains the title and text for the sport story */}
-                <div>
+                <article className='article2'>
                     <h2 className='sport2title'>Varsity is Coming!</h2>
                     {/* Check if the read me button is in use or not */}
                     {/* <p className='sport2text' style={isOpen2 ? null : button_styles}> */}
@@ -46,7 +46,7 @@ export default function Sport(){
                     <Link to="/sport/sport2">
                     <button className="read_more1">Read More...</button>
                     </Link>
-                </div>
+                </article>
             </section>
             {/* Title and text discussing social nights at university */}
             <h1 className='society_header'>Society News</h1>
@@ -58,10 +58,10 @@ export default function Sport(){
             </p>
             {/* Section containing 4 images */}
             <section className='society_news'>
-                <img src={sport3} className="sport3" alt="Club dance floor"></img>
-                <img src={sport4} className="sport4" alt="Football team drinking in a pub"></img>
-                <img src={sport5} className="sport5" alt="American football team drinking in the pub"></img>
-                <img src={sport6} className="sport6" alt="Hockey team drinking in the pub"></img>
+                <img src={sport3} className="sport_3" alt="Club dance floor"></img>
+                <img src={sport4} className="sport_4" alt="Football team drinking in a pub"></img>
+                <img src={sport5} className="sport_5" alt="American football team drinking in the pub"></img>
+                <img src={sport6} className="sport_6" alt="Hockey team drinking in the pub"></img>
             </section>
         </div>
     )
